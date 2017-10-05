@@ -1,0 +1,76 @@
+.main {
+    margin-top: -40px;
+    background-image: url("mindfulness-social-care.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vh;
+}
+
+.main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40vh;
+    width: 35vw;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.title {
+    padding: 20px;
+    height: 100%;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.title h4 {
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.title p span {
+    font-weight: 500;
+    line-height: 3em;
+    vertical-align: middle;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.title-content {
+    position: absolute;
+    top:calc(20% + 40px);
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1368px) {
+    .main-title {
+        height: 30vh;
+        width: 40vw;
+    }
+    .title h4{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-title {
+        height: 40vh;
+        width: 50vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .main-title {
+        height: 35vh;
+        width: 55vw;
+    }
+}
