@@ -7,9 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,8 +25,8 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right text-right">
-                <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+            <ul class="nav navbar-nav navbar-right text-right" style="z-index: 9999999999999">
+                <li class="active"><a href="#about">About<span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Duties</a></li>
                 <li><a href="#">Patient Groups</a></li>
                 <li><a href="#">Work Environment</a></li>
@@ -52,11 +51,29 @@
 </div>
 
 
-<div class="about" id="about">
-    <
+<div class="about" id="about" style="margin-top: 40px;">
+    <section class="container">
+        <h3 class="page-header text-center">Who is a Nurse ?</h3>
+        <dl>
+<dt><span class="lead">| n&#x0259rse |</span></dt>
+            <dd>A nurse is a person who is trained to give care (help) to people who are sick or injured. Nurses work with doctors and other health care workers to make patients well (not sick) and to keep them fit and healthy</dd>
+        </dl>
+
+        <p></p>
+    </section>
+
 </div>
 
-
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("ul.nav a").smoothScroll({
+            speed: 1000
+        })
+    });
+</script>
 </body>
 
 </html>
