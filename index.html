@@ -355,6 +355,7 @@
 <script src="bootstrap.min.js"></script>
 <script src="jquery.smooth-scroll.min.js"></script>
 <script src="scrollreveal.min.js"></script>
+<script src="jquery.bootstrap-autohidingnavbar.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("ul.nav a").smoothScroll({
@@ -367,6 +368,9 @@
         window.sr = ScrollReveal({reset:true});
         sr.reveal(".salary li",{duration:1000},200);
         sr.reveal(".panel",{duration:1200},200);
+        $(".navbar-fixed-top").autoHidingNavbar({
+            animationDuration: 500
+        });
     });
 </script>
 </body>
