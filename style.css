@@ -38,28 +38,44 @@
     vertical-align: middle;
     padding: 5px;
     color: white;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .title-content {
     position: absolute;
-    top:calc(20% + 40px);
+    top: calc(20% + 40px);
     bottom: 20%;
     left: 0;
     right: 0;
     margin: auto;
 }
 
+.callout {
+    min-height: 20vh;
+    background-image: url("Doctor-Natural-Hair.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.duty-head h3{
+    font-weight: 700;
+    color: white;
+    letter-spacing: 6px;
+    position: relative;
+    bottom: -10vh;
+}
 
 @media screen and (max-width: 1368px) {
     .main-title {
         height: 30vh;
         width: 40vw;
     }
-    .title h4{
+
+    .title h4 {
         font-size: 3em;
     }
 }
+
 @media screen and (max-width: 800px) {
     .main-title {
         height: 40vh;
@@ -67,10 +83,15 @@
     }
 }
 
-
 @media screen and (max-width: 600px) {
     .main-title {
         height: 35vh;
         width: 55vw;
+    }
+}
+
+@media screen  and (max-height: 600px) {
+    .callout {
+        height: 40vh;
     }
 }
