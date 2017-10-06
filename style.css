@@ -51,20 +51,22 @@
 }
 
 .callout {
-    min-height: 30vh;
+    min-height: 50vh;
     background-image: url("Doctor-Natural-Hair.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
+    word-wrap: normal;
 }
 .callout2{
     background-image: url("1.jpg");
+    background-position: center;
     background-attachment: fixed;
 
 }
-.callout h3{
+.callout h3, .callout h4{
     padding: 20px;
-    padding-top: 10vh;
+    padding-top: 20vh;
     font-size: 5em;
     font-weight: 700;
     letter-spacing: 6px;
@@ -75,12 +77,11 @@
             -1px 1px 0 #ccc,
             1px 1px 0 #ccc;
 }
+
 .callout h4{
-    padding: 20px;
-    padding-top: 10vh;
     font-size: 3.6em;
-    font-weight: 700;
-    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: none;
 }
 
 @media screen and (max-width: 1368px) {
