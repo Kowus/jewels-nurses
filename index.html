@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 9999999999999;">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,13 +25,23 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right text-right" style="z-index: 9999999999999" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right text-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <li class="active"><a href="#about">About<span class="sr-only">(current)</span></a></li>
                 <li><a href="#duties">Duties</a></li>
                 <li><a href="#patient-groups">Patient Groups</a></li>
-                <li><a href="#environment">Work Environment</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The Work Environment <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#environment">Work Environment</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#qualities">Important Qualities</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#age-groups">Patient Age Groups</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#">Job Outlook</a></li>
-                <li><a href="#">Salary</a></li>
+                <li><a href="#salary">Salary</a></li>
             </ul>
         </div>
     </div>
@@ -90,7 +100,7 @@
 </div>
 <div id="patient-groups" class="">
     <blockquote class="text-center">
-        <h3 class="lead">The great diversity in nursing provides ample opportunity to work with specific patient groups.</h3>
+        <h3 class="lead">The great diversity in nursing provides ample possibilities to work with specific patient groups.</h3>
     </blockquote>
     <div class="container">
         <div class="row text-left">
@@ -197,32 +207,54 @@
         <div class="col-md-12 text-center">
             <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">View More</button>
         </div>
+        <hr>
     </div>
 </div>
 
-<div id="environment">
-    <div class="text-center callout">
-        <h3>The Work Environment</h3>
+<div>
+    <div class="text-center callout callout2">
+        <h4>The Work Environment</h4>
     </div>
+    <section class="container" style="margin-top: 40px;">
+        <article id="environment">
+            <h5>The Work Environment</h5>
+            <p>
+                Registered nurses can work in hospitals, physician's’ office, home healthcare services and
+                nursing care facilities. Others work in schools or outpatient clinics or serve in the military. Home, health and public nurses travel to patient’s homes, schools, community centers and other sites.
+            </p>
+        </article>
+        <hr>
+        <article id="education">
+            <h5>Education</h5>
+            <p>
+                A bachelor's degree in nursing, an associate degree in nursing or a diploma from an approved
+                nursing program. You must also have a license from the state where you intend to work.
+            </p>
+        </article>
+        <hr>
+        <article id="qualities">
+            <h5>Important Qualities</h5>
+            <ul>
+                <li>Critical Thinking Skills</li>
+                <li>Communication Skills</li>
+                <li>Compassion</li>
+                <li>Detail Oriented</li>
+                <li>Emotional Stability</li>
+                <li>Organizational Skills</li>
+                <li>Physical Stamina</li>
+            </ul>
+        </article>
+        <hr>
+        <article id="age-groups">
+            <p>Nurses care for patients from different age groups( old or young), different cultures different
+                socioeconomic status.</p>
+        </article>
+    </section>
 </div>
+<hr>
+<div id="salary">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 <div class="modal fade" role="dialog" id="myModal">
@@ -290,12 +322,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
 <script src="jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="jquery.smooth-scroll.min.js"></script>
