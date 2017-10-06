@@ -258,7 +258,7 @@
 <div id="salary" style="margin-top: 40px;">
         <section class="container">
             <h3 class="page-header text-center">Salary</h3>
-            <ul class="list-group">
+            <ul class="list-group salary">
                 <li class="list-group-item">
                     <span class="badge">&dollar; 73,980</span>
                     Government
@@ -354,6 +354,7 @@
 <script src="jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="jquery.smooth-scroll.min.js"></script>
+<script src="scrollreveal.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("ul.nav a").smoothScroll({
@@ -362,6 +363,10 @@
         $(".navbar-header a").smoothScroll({
             speed: 1000
         });
+
+        window.sr = ScrollReveal({reset:true});
+        sr.reveal(".salary li",{duration:1000},200);
+        sr.reveal(".panel",{duration:1200},200);
     });
 </script>
 </body>
