@@ -58,11 +58,17 @@
 }
 
 .duty-head h3{
+    font-size: 5em;
     font-weight: 700;
-    color: white;
     letter-spacing: 6px;
     position: relative;
-    bottom: -10vh;
+    bottom: -8vh;
+    color: #fff;
+    text-shadow:
+            -1px -1px 0 #ccc,
+            1px -1px 0 #ccc,
+            -1px 1px 0 #ccc,
+            1px 1px 0 #ccc;
 }
 
 @media screen and (max-width: 1368px) {
