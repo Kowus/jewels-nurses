@@ -40,7 +40,7 @@
                     </ul>
                 </li>
 
-                <li><a href="#">Job Outlook</a></li>
+                <li><a href="#job-outlook">Job Outlook</a></li>
                 <li><a href="#salary">Salary</a></li>
             </ul>
         </div>
@@ -217,7 +217,7 @@
     <div class="text-center callout callout2">
         <h4>The Work Environment</h4>
     </div>
-    <section class="container" style="margin-top: 40px;">
+    <section class="container" id="work-environment" style="margin-top: 40px;">
         <article id="environment">
             <h5>The Work Environment</h5>
             <p>
@@ -255,33 +255,50 @@
     </section>
 </div>
 
+<div id="job-outlook">
+    <section class="container">
+        <h3 class="page-header">Jobs</h3>
+        <article>
+            <p>
+                Employment of registered nurses is projected to grow 16% from 2014 to 2024, much faster than the average for all occupations. Growth will occur for a number of reasons</p>
+            <p>
+                Demand for healthcare services will increase because of the aging population, given that older people typically have more medical problems than younger people.
+            </p>
+            <p>
+                Nurses also will be needed to educate and care for patients with various chronic conditions such as arthritis, dementia, diabetes and obesity.
+            </p>
+            <p> Growth is also expected to be faster than average in outpatient care centers, where patients do not stay overnight, such as those which provide same-day chemotherapy, rehabilitation, and surgery.
+            </p>
+        </article>
+    </section>
+</div>
 <div id="salary" style="margin-top: 40px;">
-        <section class="container">
-            <h3 class="page-header text-center">Salary</h3>
-            <ul class="list-group salary">
-                <li class="list-group-item">
-                    <span class="badge">&dollar; 73,980</span>
-                    Government
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">&dollar; 70,590</span>
-                    Hospitals; State, Local, Private
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">&dollar; 64,140</span>
-        Home health care services
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">&dollar; 61,730</span>
-                    Offices of Physicians
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">&dollar; 60,950</span>
-                    Nursing and residential care facilities
-                </li>
-            </ul>
+    <section class="container">
+        <h3 class="page-header">Salary</h3>
+        <ul class="list-group salary">
+            <li class="list-group-item">
+                <span class="badge">&dollar; 73,980</span>
+                Government
+            </li>
+            <li class="list-group-item">
+                <span class="badge">&dollar; 70,590</span>
+                Hospitals; State, Local, Private
+            </li>
+            <li class="list-group-item">
+                <span class="badge">&dollar; 64,140</span>
+                Home health care services
+            </li>
+            <li class="list-group-item">
+                <span class="badge">&dollar; 61,730</span>
+                Offices of Physicians
+            </li>
+            <li class="list-group-item">
+                <span class="badge">&dollar; 60,950</span>
+                Nursing and residential care facilities
+            </li>
+        </ul>
 
-        </section>
+    </section>
 
 </div>
 
@@ -365,9 +382,11 @@
             speed: 1000
         });
 
-        window.sr = ScrollReveal({reset:true});
-        sr.reveal(".salary li",{duration:1000},200);
-        sr.reveal(".panel",{duration:1200},200);
+        window.sr = ScrollReveal({reset: true, delay: 500});
+        sr.reveal(".salary li", {duration: 1000});
+        sr.reveal(".panel", {duration: 1000});
+        sr.reveal("#job-outlook p",{duration:1000});
+        sr.reveal("#work-environment article",{duration:1000});
         $(".navbar-fixed-top").autoHidingNavbar({
             animationDuration: 500
         });
